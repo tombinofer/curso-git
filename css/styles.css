@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* Para agregar el icono de Facebook */
+@font-face {
+    font-family: 'icomoon';
+    src:url('fonts/icomoon.eot?bixkth');
+    src:url('fonts/icomoon.eot?#iefixbixkth') format('embedded-opentype'),
+        url('fonts/icomoon.woff?bixkth') format('woff'),
+        url('fonts/icomoon.ttf?bixkth') format('truetype'),
+        url('fonts/icomoon.svg?bixkth#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Para agregar el icono de Menu */
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*  colores del back  #bab03e    #c7ba56*/
+body {
+    background: #0f0f0f;
+    font-family: "Lato", Helvetica, Arial, sans-serif;  
+    width:100%;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lora";
+    color:#453B07
+}
+header{
+    background: rgb(0, 0, 0);
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+
+    
+}
+header nav{
+    width: 100%;
+    margin: 20px auto;
+    background: #FFFFFF;
+
+}
+header nav ul{
+    overflow:hidden;
+    list-style: none;
+    /*marginar a la derecha*/
+    float: right;
+}
+header nav ul li {
+    /*marginar a la derecha*/
+    float: left;
+}
+
+aside {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    overflow: hidden;
+}    
+
+/* Para agregar el icono de Facebook */
+.icon-facebook::before {
+    content: "\e600";
+    font-family: 'icomoon';
+}
+
+.menu {
+    margin-right: 85px;
+}
+
+.menu li {
+    display:inline-block;
+    font-size: 20px; /* antes 16px  */
+    position: relative;
+    margin: 0em 2em 1em 0em;
+    padding: 0.1em;
+ 
+
+    /* Para agregar la sombra "3D" 
+    text-shadow: 
+        1px 1px 0px rgba(230,230,230,1),
+        1px 1px 0px rgba(200,200,200,1),
+        1px 1px 0px rgba(180,180,180,1),
+        1px 1px 0px rgba(160,160,160,1),
+        1px 1px 0px rgba(0,0,0,1),
+        1px 1px 0px rgba(0,0,0,0.5);
+
+        
+
+        */
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+   /* padding: 2px;*/
+    display: block;
+
+}
+
+.menu li a:hover{
+    color: #ff0f0f; 
+}
+
+.menu-bar{
+    display: none;
+
+}
+
+.icon-list2::before{
+    content: "\e601";
+    font-family: 'icomoon';
+}
+
+
+/* --------------- Home ---------------------------------------------------!!!!!!!*/
+
+.fondo-arbol{
+    width: 50%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.fondo-arbol img{
+    width: 50%;
+    position: absolute;
+}
+
+
+
+.guarda {
+    width: 20%;
+    padding: 0px;
+    margin: 0em 2em 4.6em 0em;
+}
+
+.guarda img {
+    width: 20%;
+    position: absolute;
+    mask-repeat: repeat;
+}
+/* --------------- hasta aca ------*/
+
+.marca img {
+    width:15%;
+    float: left;
+    position: relative;
+    min-width: 150px;
+    /* width: 20% (medidas originales) tamaño de la marca!!!!*/
+    margin-left: 65px;
+    /*agregue un margin left para alinear el logo con el frasco */
+    margin-top: 15px;
+
+}
+
+.product-image {
+    display: inline-block;
+    width: 25%;
+    margin: 2em 2em 2em 4em;
+}
+.product-image img {
+    width: 50%;
+    border-radius: 45%;
+    margin-left: 80px;
+    
+    
+}
+.product-image-description {
+    color:#f7f3f3;
+    display: block;
+    margin-top: 1em;
+    text-align: center;
+}
+p {
+    color:#FFFFFF;
+}
+.consulta img{
+    width: 10%;
+}
+.franja-tipos{
+    background: #534709;
+    margin-top: -3px;
+    position: relative;
+    height: 3em;
+}
+
+.franja-tipos h2{
+    color: #FFFFFF;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    margin-left: 40px;
+}
+
+/* Para agregar la Animacion */
+.zoomIt{
+display:inline-block!important;
+-webkit-transition:-webkit-transform 5s ease-out;
+-moz-transition:-moz-transform 1s ease-out;
+-o-transition:-o-transform 1s ease-out;
+-ms-transition:-ms-transform 1s ease-out;
+transition:transform 1s ease-out;
+position: relative;
+}
+.zoomIt:hover{
+-moz-transform: scale(1.1);
+-webkit-transform: scale(1.1);
+-o-transform: scale(1.1);
+-ms-transform: scale(1.1);
+transform: scale(1.1)
+}
+/* ---------------    responsivee      --------------------------------------------------!!!!!!!*/
+@media screen and (max-width: 1076px) {
+  
+  header nav{
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    position: fixed;
+    left: -100%;
+  }
+  
+.marca img{
+    width:70%;
+    float: left;
+    margin: 1%;
+    min-width: 150px;
+    /*  width:70%;
+    float: left;
+    margin: 1%;
+    min-width: 150px; (medidas originales) ? */
+ }
+.menu-bar{
+    display: block;
+    width: 100%;
+
+ }
+.menu-bar span{
+    float: right;
+    font-size: 300%;
+    color: #bab03e;
+    margin: 0em 0em 0.2em 0em;
+ }
+
+.menu-bar .bt-menu{
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    
+ }
+
+.menu li {
+    display:block;
+    float: none;
+    margin: 0em 1.5em 0em 0em;
+    padding: 15px;
+   }
+ 
+}
+/* --------------- Footer!!!!!!!!!!!!!!!!!!!!!!!!! ---------------------------------------------------!!!!!!!*/
+
+.footer{
+    display: inline-block;
+    width: 35%;
+    margin: 2em 2em 2em 4em;
+}
+.icono-contacto {
+    width: 5%;
+}
+
+/* --------------- Nosotros -------------------------------------!!!!!!!*/
+/* nth-of-type(odd) - impar      even - par*/
+.fondo-nosotros{
+    padding: 0;
+    margin: 0;
+}
+
+.fondo-nosotros img{
+    width: 100%;
+}
+
+
+.historia h2{
+    margin: 0em 0.5em 0.5em 0.6em;
+    padding: 0.5em 1em 0em 2em;
+}
+
+.historia >  p {
+    margin: 0em 2em 0em 2em;
+    padding: 0.5em 1em 0em 2em;
+}
+
+.historia h3{
+    margin: 2em 2em 2em 2em;
+    padding: 0.5em 1em 0em 2em;
+}
+/* --------------- nav flotante -------------!!!!!!!*/
+nav .flotante {
+    top:0;
+    background:rgba(255,255,255,0.7); 
+    position: fixed;
+    margin:0px;
+    width: 100%;
+
+}
+.flotante li{
+    
+    display: inline-block;
+    font-size: 16px;
+    padding: 1.5px;
+    margin: 1em 2em 1em 1em;
+
+}
+.flotante li a{
+    text-decoration: none;
+    color: #bab03e;
+    padding: 2px;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    float: right;
+}
+.flotante li a:hover{
+    color: #000000; 
+}
+.logo-flotante{
+    width:40%;
+    float: left;
+}
+
+/* --------------- Dulces - Mermeladas- jaleas- otros - contacto !!!!!!!!!!!!!!!!!!!!!!!!! ---------------------------------------------------!!!!!!!*/
+.wrapper{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/*  se trabaja para modificar el banner principal  */
+.banner{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+dd, dt,dl{
+    margin:0;
+    padding: 0;
+}
+.banner img{
+    width: 70%;
+    z-index: 1;
+}
+.productos{
+    margin:0;
+    padding: 0;
+}
+.productos li{
+    list-style: none;
+}
+.frascos{
+    margin-top: -300px;
+    width: 40%;
+    z-index: 3;
+
+}
+
+
+.banner-productos{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.banner-productos img{
+    width: 100%;
+}
+
+.franja-blanca{
+    background: #FFFFFF;
+    margin-top: -3px;
+    position: relative;
+    height: 3em;
+    z-index: 1;
+}
+
+.franja-blanca h3{
+    color: black;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    margin-left: 40px;
+}
+
+.productos {
+    display: inline-block;
+}
+/* --------------- Contacto ---------------------!!!!!!!*/
+
+.form-contacts-submit{
+    width: 60%;
+    margin: 0 auto;
+    text-align:left
+}
+legend
+{
+   font-family: "Trebuchet MS", Geneva, Arial, Helvetica, sans-serif;
+   font-weight: bold;
+}
